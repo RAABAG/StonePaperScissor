@@ -1,1 +1,8 @@
-# StonePaperScissor
+# KBC BANANE KA RASTA....
+Questions ke diffrent catagories socho..
+Questions ka Data Collect karo..
+Question display hone ka ui banao..
+Naye Naye .... Craaaazzzyyyy features socho....
+then question filter karke display karne ka logic banao..
+then answers ko check karke score display karo...
+and all set ... 👍👍👍
