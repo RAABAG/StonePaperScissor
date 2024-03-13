@@ -2,120 +2,106 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Quiz</title>
-    <link rel="stylesheet" href="css/quiz.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <style></style>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/quiz.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <style></style>
 </head>
 
 <body>
-    <nav></nav>
-    <div id="home-container">
-        <form action="" id="setup">
-            <label for="name">Enter Your Name :)</label>
-            <input type="text" id="name" autocomplete="off" />
-            <label for="questions">How many questions do you want to attempt?</label>
-            <select name="questions" id="questions">
-                <option value="10">10</option>
-                <option value="15">15</option>
-                <option value="20">20</option>
-                <option value="30">30</option>
-                <option value="40">40</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-            </select>
-            <label for="type">Question type</label>
-            <select name="type" id="type">
-                <option value="mixed">Mixed</option>
-                <option value="categories">Select categories</option>
-            </select>
-            <div class="catagory">
+  <nav></nav>
+  <div id="home-container">
+    <h2>Quiz <img src="icon.png"></h2>
+    <form action="" id="setup">
+      <label for="name">Enter Your Name :)</label>
+      <input type="text" id="name" autocomplete="off" />
+      <label for="questions">How many questions do you want to attempt?</label>
+      <select name="questions" id="questions">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+      <label for="type">Question type</label>
+      <select name="type" id="type">
+        <option value="mixed">Mixed</option>
+        <option value="categories">Select categories</option>
+      </select>
+      <div class="catagory">
 
-                <input type="checkbox" name="select" id="generalKnowledge" checked />
-                <label for="generalKnowledge">General Knowledge</label>
-
-
-                <input type="checkbox" name="select" id="scienceTechnology" />
-                <label for="scienceTechnology">Science and Technology</label>
+        <input type="checkbox" name="select" id="generalKnowledge" checked />
+        <label for="generalKnowledge">General Knowledge</label>
 
 
-                <input type="checkbox" name="select" id="sports" />
-                <label for="sports">Sports</label>
+        <input type="checkbox" name="select" id="scienceTechnology" />
+        <label for="scienceTechnology">Science and Technology</label>
 
 
-                <input type="checkbox" name="select" id="moviesEntertainment" />
-                <label for="moviesEntertainment">Movies and Entertainment</label>
+        <input type="checkbox" name="select" id="sports" />
+        <label for="sports">Sports</label>
 
 
-                <input type="checkbox" name="select" id="history" />
-                <label for="history">History</label>
+        <input type="checkbox" name="select" id="moviesEntertainment" />
+        <label for="moviesEntertainment">Movies and Entertainment</label>
 
 
-                <input type="checkbox" name="select" id="geography" />
-                <label for="geography">Geography</label>
+        <input type="checkbox" name="select" id="history" />
+        <label for="history">History</label>
 
 
-                <input type="checkbox" name="select" id="literature" />
-                <label for="literature">Literature</label>
+        <input type="checkbox" name="select" id="geography" />
+        <label for="geography">Geography</label>
 
 
-                <input type="checkbox" name="select" id="mathsLogic" />
-                <label for="mathsLogic">Maths and Logic</label>
+        <input type="checkbox" name="select" id="literature" />
+        <label for="literature">Literature</label>
 
 
-                <input type="checkbox" name="select" id="music" />
-                <label for="music">Music</label>
+        <input type="checkbox" name="select" id="mathsLogic" />
+        <label for="mathsLogic">Maths and Logic</label>
 
-            </div>
-            <input type="submit" class="submit-btn1" value="Start Quizz" />
-        </form>
+
+        <input type="checkbox" name="select" id="music" />
+        <label for="music">Music</label>
+
+      </div>
+      <input type="submit" class="submit-btn1" value="Start Quizz" />
+    </form>
+  </div>
+
+  <div id="quiz-container">
+    <form id="quiz-form">
+      <ul id="question-container">
+
+      </ul>
+    </form>
+    <input type="submit" class="submit-btn" id="quizz-submit" value="Next Question" />
+    <input type="reset" class="submit-btn" value="Restart Quiz" id="restart2" />
+  </div>
+  </div>
+
+  <div id="result-container">
+
+    <h2>Results</h2>
+    <h3 id="result-display"></h3>
+    <div class="colors">
+      <div class="green"></div>
+      <div>Correct Answer</div>
+      <div class="red"></div>
+      <div>Wrong Answer</div>
+      <div class="orange"></div>
+      <div>Not Answered</div>
     </div>
+    <ul id="answersct">
 
-    <div id="quiz-container">
-        <form id="quiz-form">
-          <ul id="question-container">
-            
-          </ul>
-        </form>
-          <input
-            type="submit"
-            class="submit-btn"
-            id="quizz-submit"
-            value="Next Question"
-          />
-          <input
-          type="reset"
-          class="submit-btn"
-          value="Restart Quiz"
-          id="restart2"
-        />
-        </div>
-      </div>
-  
-      <div id="result-container">
-        
-          <h2>Results</h2>
-          <h3 id="result-display"></h3>
-          <div class="colors">
-            <div class="green"></div>
-            <div>Correct Answer</div>
-            <div class="red"></div>
-            <div>Wrong Answer</div>
-            <div class="orange"></div>
-            <div>Not Answered</div>
-        </div>
-        <ul id="answersct">
-          
-        </ul>
-        <input
-        type="reset"
-        class="submit-btn"
-        value="Restart Quiz"
-        id="restart1"
-      />
-      </div>
+    </ul>
+    <input type="reset" class="submit-btn" value="Restart Quiz" id="restart1" />
+  </div>
 </body>
 
 <script src="js/quizz.js"></script>
