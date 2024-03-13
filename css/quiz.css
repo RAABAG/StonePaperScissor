@@ -291,3 +291,57 @@ h2 img{
     /* gap: 2%; */
 
 }
+.optionr {
+    border: 1px solid #000000;
+    padding: 0.8rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#result-container h2,
+h3 {
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    .questiondisplay h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .optionr {
+        padding: 0.3rem;
+        font-size: 12px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #result-container ul li {
+        margin: 5% 2%;
+        padding: 3%;
+
+    }
+}
+
+.colors {
+    width: 145px;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.green {
+    background-color: lime;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
