@@ -169,3 +169,55 @@ input[type="checkbox"]:checked+label {
     grid-auto-flow: column;
     grid-auto-columns: 100%;
 }
+
+.oneque {
+    /* border: 1px solid rgb(44, 61, 139); */
+    padding: 8%;
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+    border-radius: 1rem;
+    gap: 10px;
+    align-items: center;
+    background-size: cover;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+input[type="radio"]:checked+label {
+    color: rgb(0, 0, 0);
+    background-color: #8db3ff;
+    
+}
+h2{
+    color: #002765;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+h2 img{
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+.optcont {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.quiz-label {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+
+}
