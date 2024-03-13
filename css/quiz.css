@@ -221,3 +221,73 @@ h2 img{
     padding: 20px;
 
 }
+
+@media screen and (max-width:480px) {
+    #quiz-form {
+        width: 80%;
+        overflow: hidden;
+        margin: 10% auto;
+        margin-bottom: 4%;
+        font-size: 0.7em;
+    }
+
+    .oneque {
+        padding: 15% 10%;
+
+    }
+
+    .quiz-label {
+        padding: 5px;
+    }
+
+    .oneque h3 {
+        font-size: 1.3em;
+    }
+}
+
+
+
+#result-container {
+    width: 80%;
+
+    margin: 10% auto;
+    padding: 3%;
+    background-color: #fff;
+
+    border-radius: 15px;
+}
+
+#result-container ul {
+    list-style-type: none;
+    padding: 0%;
+    /* border: 1px solid green; */
+}
+
+#result-container ul li {
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: 5% 3%;
+    background-color: #ecf3ff;
+    padding: 2%;
+    border-radius: 15px;
+
+}
+
+#answersct {
+    border-radius: 20px;
+}
+
+.questiondisplay {
+    margin-bottom: 20px;
+}
+
+.questiondisplay h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.optcont {
+    display: grid;
+    /* gap: 2%; */
+
+}
