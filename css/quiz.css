@@ -44,3 +44,46 @@ nav::before {
     background-color: #fff;
 
 }
+input[type="text"] {
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 7px;
+}
+
+
+
+
+select {
+    width: 100%;
+    padding: 7px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+
+}
+
+#quiz-container {
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width:480px) {
+    #home-container {
+        padding: 5%;
+        font: 1.1em sans-serif;
+        width: 80vw;
+        margin: 10vh auto;
+    }
+
+}
+
+#setup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
