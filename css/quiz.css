@@ -87,3 +87,85 @@ select {
     gap: 0.5em;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
+.catagory {
+    margin: 5px 0px;
+    display: none;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+input[type="checkbox"]:checked+label {
+    
+    background-color: #8db3ff;
+}
+
+.catagory label {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.submit-btn {
+
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+
+
+
+
+.submit-btn1 {
+    border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+/* Quizz Styling */
+
+#quiz-form {
+    width: 60%;
+    overflow: hidden;
+    margin: 5% auto;
+    margin-bottom: 4%;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+
+@media screen and (min-width:480px) {
+    .submit-btn {
+        margin: 0% 37.5%;
+        width: 25%;
+        cursor: pointer;
+    }
+
+    .submit-btn1 {
+        width: 50%;
+        margin: 10px auto;
+    }
+}
+
+
+#question-container {
+    /* border: 1px solid black; */
+    list-style: none;
+    padding: 0%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+}
